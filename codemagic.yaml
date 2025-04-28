@@ -1,15 +1,14 @@
-
 workflows:
   build-android:
-    name: Build APK Admin e Guest
-    instance_type: mac_mini_m1
-    max_build_duration: 30
+    name: Build only Android APKs
+    max_build_duration: 60
     environment:
       flutter: stable
+      xcode: none  # <--- Non usare Xcode, solo Android
     scripts:
-      - name: Pulizia
+      - name: Pulizia progetto
         script: flutter clean
-      - name: Ottieni dipendenze
+      - name: Recupero dipendenze
         script: flutter pub get
       - name: Build Admin APK
         script: flutter build apk --release -t lib/main_admin.dart
