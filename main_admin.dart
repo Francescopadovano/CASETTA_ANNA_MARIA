@@ -1,17 +1,20 @@
-
 import 'package:flutter/material.dart';
 
-void main() => runApp(AdminApp());
+void main() {
+  runApp(const AdminApp());
+}
 
 class AdminApp extends StatelessWidget {
+  const AdminApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Casetta Anna Maria Admin',
-      theme: ThemeData(primarySwatch: Colors.deepOrange),
+      title: 'Admin Casetta Anna Maria',
       home: Scaffold(
-        appBar: AppBar(title: Text('Admin Panel')),
-        body: Center(child: Text('Benvenuto Admin')),
+        body: Center(
+          child: Text('Benvenuto Amministratore!'),
+        ),
       ),
     );
   }
