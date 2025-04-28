@@ -1,23 +1,25 @@
+
 name: casetta_anna_maria_app
 description: App per apertura porte tramite relè Wi-Fi
 publish_to: 'none'
 version: 1.0.0+1
+
 environment:
-  sdk: ">=2.17.0 <3.0.0"
+  sdk: ">=3.3.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  local_auth: ^2.1.0
-  flutter_secure_storage: ^7.0.1
-  firebase_core: ^2.4.1
-  firebase_auth: ^4.2.5
-  cloud_firestore: ^4.3.2
+  local_auth: ^2.1.6
+  flutter_secure_storage: ^8.0.0
+  firebase_core: ^2.24.2
+  firebase_auth: ^4.16.0
+  cloud_firestore: ^4.13.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^2.0.1
+  flutter_lints: ^3.0.1
 
 flutter:
   uses-material-design: true

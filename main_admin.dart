@@ -11,9 +11,12 @@ class AdminApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Admin Casetta Anna Maria',
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Center(
-          child: Text('Benvenuto Amministratore!'),
+        appBar: AppBar(title: const Text('Admin Dashboard')),
+        body: const Center(
+          child: Text('Benvenuto Amministratore!',
+              style: TextStyle(fontSize: 24)),
         ),
       ),
     );

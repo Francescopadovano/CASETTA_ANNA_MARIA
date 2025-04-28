@@ -11,9 +11,12 @@ class GuestApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Guest Casetta Anna Maria',
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Center(
-          child: Text('Benvenuto Ospite!'),
+        appBar: AppBar(title: const Text('Guest Dashboard')),
+        body: const Center(
+          child: Text('Benvenuto Ospite!',
+              style: TextStyle(fontSize: 24)),
         ),
       ),
     );
